@@ -4,4 +4,4 @@ WORKDIR /dbt
 COPY script.sh ./
 COPY binance ./
 
-ENTRYPOINT [ "/script.sh" ]
+ENTRYPOINT "./script.sh"
