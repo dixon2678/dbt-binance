@@ -3,5 +3,5 @@ USER root
 WORKDIR /dbt
 COPY script.sh ./
 COPY binance ./
-
+RUN chmod +x ./script.sh
 ENTRYPOINT "./script.sh"
