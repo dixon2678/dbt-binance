@@ -1,0 +1,8 @@
+binance:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: final-347314
+      dataset: main
