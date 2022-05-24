@@ -4,4 +4,4 @@ WORKDIR /dbt
 COPY script.sh ./
 COPY binance ./
 
-CMD exec dbt run
+CMD ls
