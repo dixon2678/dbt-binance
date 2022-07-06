@@ -5,7 +5,7 @@ WITH cmc AS(
 ),
 
 a AS(
-SELECT bn.symbol AS ticker, cm.symbol AS coin, cm.name AS coin_fullname, cm.date_added, * EXCEPT(symbol, date_added)
+SELECT bn.symbol AS ticker, cm.symbol AS coin, cm.name AS coin_fullname, cm.date_added, * EXCEPT(symbol, date_added, tags)
 FROM `final-347314.main.binance_api` bn
 LEFT JOIN cmc cm
 ON bn.symbol LIKE CONCAT(cm.symbol, '%')
